@@ -1,0 +1,12 @@
+//Project Euler Problem 1
+function multiplesOfThreeAndFive(number) {
+	var sum = 0;
+	for(var i = 0; i < number; i++) {
+		if(i % 3 === 0 || i % 5 === 0) {
+			sum += i;
+		}
+	}
+	return sum;
+}
+
+console.log(multiplesOfThreeAndFive(1000))
